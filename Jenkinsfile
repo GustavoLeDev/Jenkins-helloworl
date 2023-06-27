@@ -5,10 +5,10 @@ node {
   stage('Cloning the project') {
     git 'https://github.com/GustavoLeDev/Jenkins-helloworl.git'
   }
-   stage('Maven Build'){
-        def MavenHome = toll name: "Maven 3.9.1", type:"maven"
-        def mavenCMD = "${MavenHome}/bin/mvn"
-        sh '${mavenCMD} clean package'
+   //stage('Maven Build'){
+        //def MavenHome = toll name: "Maven 3.9.1", type:"maven"
+        //def mavenCMD = "${MavenHome}/bin/mvn"
+        //sh '${mavenCMD} clean package'
     }
     
     stage('Revision du code'){
