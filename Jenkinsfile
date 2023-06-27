@@ -6,9 +6,9 @@ node {
     git 'https://github.com/GustavoLeDev/Jenkins-helloworl.git'
   }
    stage('SonarQube Analysis') {
-    def scannerHome = tool 'SonarScanner';
+    def scannerHome = tool 'Sonarqube';
     withSonarQubeEnv() {
-      sh "${scannerHome}/bin/sonar-scanner"
+      sh "${scannerHome}/bin/windows-x86-64/SonarService.bat"
     }
   }
 }
